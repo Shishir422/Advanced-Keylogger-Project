@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Keylogger",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-std=c++17",
+          "-o",
+          "keylogger",
+          "./core_logic/main.cpp",
+          "./data_storage/storage.cpp",
+          "./data_transmission/transmit.cpp"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
